@@ -1,0 +1,221 @@
+//IMPORT ALL SASS DIRECTORY FILES
+
+// Import Global Variables
+
+@import "variables";
+
+//Import Global Mixins
+
+@import "mixins";
+
+// Additional Sass Below
+
+body {
+    overflow-x: hidden;
+    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, system-ui, 'Helvetica Neue', 'Roboto', 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: #444;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+}
+
+ul,
+li {
+    /* reset the margin and padding */
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 16px;
+    margin-right: 32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1 {
+    font-weight: 800;
+    letter-spacing: normal;
+    text-transform: none;
+    font-size: 2rem;
+}
+
+@media (min-width: $small) {
+    h1 {
+        font-size: 2.25rem;
+    }
+}
+
+@media (min-width: $medium) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: $large) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+h2 {
+    font-weight: 800;
+    letter-spacing: normal;
+    text-transform: none;
+    font-size: 1.5rem;
+}
+
+@media (min-width: $small) {
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: $medium) {
+    h2 {
+        font-size: 1.875rem;
+    }
+}
+
+@media (min-width: $large) {
+    h2 {
+        font-size: 2.25rem;
+    }
+}
+
+h3 {
+    font-weight: 500;
+    letter-spacing: normal;
+    text-transform: none;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+@media (min-width: $small) {
+    h3 {
+        font-size: 1.375rem;
+        line-height: 1.091;
+    }
+}
+
+@media (min-width: $medium) {
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.273;
+    }
+}
+
+@media (min-width: $large) {
+    h3 {
+        font-size: 1.75rem;
+        line-height: 1;
+    }
+}
+
+h4 {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (min-width: $small) {
+    h4 {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: $medium) {
+    h4 {
+        font-size: 1.125rem;
+        line-height: 1.375;
+    }
+}
+
+@media (min-width: $large) {
+    h4 {
+        font-size: 1.25rem;
+        line-height: 1.2;
+    }
+}
+
+h5 {
+    font-weight: 700;
+    letter-spacing: normal;
+    text-transform: none;
+    font-size: 0.875rem;
+    line-height: 1.429;
+}
+
+@media (min-width: $small) {
+    h5 {
+        font-size: 0.875rem;
+        line-height: 1.429;
+    }
+}
+
+@media (min-width: $medium) {
+    h5 {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: $large) {
+    h5 {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+h6 {
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.813rem;
+    line-height: 1.538;
+}
+
+.hero-overlay {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    width: 80%;
+    padding: 1rem;
+    margin-top: -3rem;
+}
+
+@media (min-width: $medium) {
+    .hero-overlay {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .overlay {
+        width: 40%;
+        padding: 4rem;
+        background-color: rgba(255, 255, 255, .8);
+        margin-top: 0;
+        margin-right: 4rem;
+    }
+}
