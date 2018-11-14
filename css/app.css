@@ -138,6 +138,9 @@ h6 {
   font-size: 0.813rem;
   line-height: 1.538; }
 
+img {
+  vertical-align: middle; }
+
 .hero-overlay {
   position: relative; }
 
@@ -165,3 +168,51 @@ h6 {
     background-color: rgba(255, 255, 255, 0.8);
     margin-top: 0;
     margin-right: 4rem; } }
+
+button {
+  padding: 0.5rem 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  background-image: -webkit-linear-gradient(60deg, #7474BF, #348AC7);
+  background-image: -o-linear-gradient(60deg, #7474BF, #348AC7);
+  background-image: linear-gradient(30deg, #7474BF, #348AC7);
+  border-radius: 0.25rem;
+  border: none; }
+
+.offer-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: whitesmoke; }
+  .offer-bar h5 {
+    color: #0078aa;
+    margin-top: 1rem; }
+  .offer-bar button {
+    margin: 1rem 0; }
+
+@media (min-width: 768px) {
+  .offer-bar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 4rem; }
+    .offer-bar h5 {
+      margin: 0; }
+    .offer-bar button {
+      margin: 0 0 0 1rem; } }
